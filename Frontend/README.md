@@ -3,6 +3,7 @@
 ## 🤔 Critical Rendering Path ?
 
 > 읽은 글들
+>
 > [MDN](https://developer.mozilla.org/ko/docs/Web/Performance/Critical_rendering_path)
 
 중요 렌더링 경로 (Critical Rendering Path)는 브라우저가 HTML, CSS, Javascipt를 화면에 픽셀로 변화하는 일련의 단계를 말하며 이를 최적화하는 것은 렌더링 성능을 향상시킵니다. 중요 렌더링 경로는 Document Object Model (DOM), CSS Object Model (CSSOM), 렌더 트리 그리고 레이아웃을 포함합니다. (MDN)
