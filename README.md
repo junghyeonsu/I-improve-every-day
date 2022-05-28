@@ -29,3 +29,17 @@
 - [ ] DeepCopy 함수 구현해보기
 - [ ] Debounce 함수 구현해보기
 - [ ] Throttle 함수 구현해보기
+- [ ] (마이크로, 렌더링, 태스크큐)의 역할과 우선순위에 대해
+- [ ] requestanimationframe에 대해서
+- [ ] 자바스크립트가 프로토타입을 선택한 이유
+- [ ] textContent vs innerText vs innerHTML
+- [ ] willchange에 대해서
+- [ ] z-index의 원리와 언제 형성되는지?
+- [ ] arraylist vs linkedlist
+- [ ] tcp vs udp
+- [ ] HTTP1.1 vs HTTP2.0
+- [ ] 이벤트 delegation에 대해 말해주세요
+- [ ] 이벤트 캡처링 버블링
+- [ ] 이벤트 캡처링은 무조건 버블링보다 먼저 발생하는 가?
+- [ ] 이벤트 전파를 막을 수 있는 방법
+- [ ] 프로토타입 체인의 끝에는 무엇이 있나요?
