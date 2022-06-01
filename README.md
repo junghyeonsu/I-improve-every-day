@@ -9,7 +9,7 @@
 
 ## HTML
 
-- [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md))
+- [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md/#-innerhtml-vs-innertext-vs-textcontent))
 
 ### 모르는 것
 
