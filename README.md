@@ -2,8 +2,17 @@
 
 > 매일 발전하기 위해 모르는 것들을 최소한 하나라도 정리합니다. 모르는 것들이 있으면 요기에 전부 기록해놓습니다. 순서는 상관없습니다.
 
+## Frontend
+
 - [x] Critical Rendering Path에 대해서 들어본 적이 있나요? ([Frontend](./Frontend/README.md/#-critical-rendering-path-))
 - [x] 리페인트, 리플로우에 대해서 ([Frontend](./Frontend/README.md/#-리플로우--리페인트))
+
+## HTML
+
+- [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md))
+
+### 모르는 것
+
 - [ ] flux 아키텍처에 대해서
 - [ ] 자바스크립트가 멀티 스레드 형식으로 동작하게 하는 것?
 - [ ] typescript duck typing
@@ -32,7 +41,6 @@
 - [ ] (마이크로, 렌더링, 태스크큐)의 역할과 우선순위에 대해
 - [ ] requestanimationframe에 대해서
 - [ ] 자바스크립트가 프로토타입을 선택한 이유
-- [ ] textContent vs innerText vs innerHTML
 - [ ] willchange에 대해서
 - [ ] z-index의 원리와 언제 형성되는지?
 - [ ] arraylist vs linkedlist
