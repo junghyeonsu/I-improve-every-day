@@ -11,6 +11,12 @@
 
 - [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md/#-innerhtml-vs-innertext-vs-textcontent))
 
+## JavaScript
+
+- [x] 이벤트 캡처링 버블링 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
+- [x] 이벤트 전파를 막을 수 있는 방법 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
+- [x] 이벤트 delegation에 대해 말해주세요 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
+
 ## React
 
 - [x] 리액트에서 사용하는 JSX 문법은 순수 자바스크립트가 아닌데 브라우저에서 어떻게 동작할 수 있는 걸까요? ([React](./React/README.md/#-리액트에서-사용하는-jsx-문법은-순수-자바스크립트가-아닌데-브라우저에서-어떻게-동작할-수-있는-걸까요))
@@ -50,14 +56,10 @@
 - [ ] arraylist vs linkedlist
 - [ ] tcp vs udp
 - [ ] HTTP1.1 vs HTTP2.0
-- [ ] 이벤트 delegation에 대해 말해주세요
-- [ ] 이벤트 캡처링 버블링
-- [ ] 이벤트 캡처링은 무조건 버블링보다 먼저 발생하는 가?
-- [ ] 이벤트 전파를 막을 수 있는 방법
 - [ ] 프로토타입 체인의 끝에는 무엇이 있나요?
 - [ ] 웹 접근성을 고려한 콘텐츠 숨기기 (blind 처리)를 알고 계신가요?
 - [ ] let, const, var 메모리를 측면에서? (개인적인 궁금증)
 - [ ] CQRS에 대해서
-- [ ]  웹 접근성을 고려한 콘텐츠 숨기기 (blind 처리)
-- [ ]  let, const, var 메모리 측면에서
-- [ ]  CQRS
+- [ ] 웹 접근성을 고려한 콘텐츠 숨기기 (blind 처리)
+- [ ] let, const, var 메모리 측면에서
+- [ ] CQRS
