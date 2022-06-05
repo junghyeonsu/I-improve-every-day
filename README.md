@@ -10,6 +10,7 @@
 ## HTML
 
 - [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md/#-innerhtml-vs-innertext-vs-textcontent))
+- [x] viewport에 대해서 알고 계신가요? ([HTML](./HTML/README.md/#-viewport에-대해서-알고-계신가요))
 
 ## JavaScript
 
@@ -22,7 +23,7 @@
 - [x] 리액트에서 사용하는 JSX 문법은 순수 자바스크립트가 아닌데 브라우저에서 어떻게 동작할 수 있는 걸까요? ([React](./React/README.md/#-리액트에서-사용하는-jsx-문법은-순수-자바스크립트가-아닌데-브라우저에서-어떻게-동작할-수-있는-걸까요))
 - [x] 리액트에서 배열에 `key` 속성은 왜 필요할까요? ([React](./React/README.md/#-리액트에서-배열에-key-속성은-왜-필요할까요))
 
-## 모르는 것
+## 해결되지 않은 것들
 
 - [ ] flux 아키텍처에 대해서
 - [ ] 자바스크립트가 멀티 스레드 형식으로 동작하게 하는 것?
@@ -38,8 +39,6 @@
 - [ ] 리플로우와 리페인트에 대한 차이를 설명해주세요.
 - [ ] HTML에 대한 구조가 변경되면 리플로우가 일어나는데 CSS에 의해 리플로우가 일어난다면 어떤 속성 때문 일까요?
 - [ ] preventDefault와 stopPropogation에 대한 차이점과 설명을 해주세요.
-- [ ] viewPort에 대한 개념을 알고 계신가요?
-- [ ] meta 태그에 사용하는 veiwPort를 알고 계신가요?
 - [ ] 기기가 가지는 물리적 해상도와 개발에 물리적 해상도 차이를 알고 계신가요?
 - [ ] 이미지 확장자 .svg, .png, .jpeg, .gif에 대한 차이를 설명해주세요.
 - [ ] 타입스크립트 제네릭에 대해서 조금 더 상세하게 써볼 기회가 있을까?
