@@ -12,6 +12,10 @@
 - [x] textContent vs innerText vs innerHTML ([HTML](./HTML/README.md/#-innerhtml-vs-innertext-vs-textcontent))
 - [x] viewport에 대해서 알고 계신가요? ([HTML](./HTML/README.md/#-viewport에-대해서-알고-계신가요))
 
+## CSS
+
+- [x] will-change 속성에 대해서 아시나요? ([CSS](./CSS/README.md/#-will-change-속성에-대해서-아시나요))
+
 ## JavaScript
 
 - [x] 이벤트 캡처링 버블링 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
@@ -50,7 +54,6 @@
 - [ ] (마이크로, 렌더링, 태스크큐)의 역할과 우선순위에 대해
 - [ ] requestanimationframe에 대해서
 - [ ] 자바스크립트가 프로토타입을 선택한 이유
-- [ ] willchange에 대해서
 - [ ] z-index의 원리와 언제 형성되는지?
 - [ ] arraylist vs linkedlist
 - [ ] tcp vs udp
