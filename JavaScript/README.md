@@ -111,3 +111,35 @@ function logEvent(event) {
 
 - [개발 공부/Java script
 자바스크립트는 왜 싱글 스레드를 선택했을까? 프로세스, 스레드, 비동기, 동기, 자바스크립트 엔진, 이벤트루프](https://miracleground.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%8A%94-%EC%99%9C-%EC%8B%B1%EA%B8%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EB%A5%BC-%EC%84%A0%ED%83%9D%ED%96%88%EC%9D%84%EA%B9%8C-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8A%A4%EB%A0%88%EB%93%9C-%EB%B9%84%EB%8F%99%EA%B8%B0-%EB%8F%99%EA%B8%B0-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%97%94%EC%A7%84-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A3%A8%ED%94%84)
+
+## 🤔 requestAnimationFrame에 대해서 말해주세요
+
+`requestAnimationFrame`은 브라우저에게 다음 리페인트가 실행되기 전에 해당 애니메이션을 업데이트하는 함수를 호출하게 합니다.
+
+```js
+function callback() {
+	/* 리페인트 전에 업데이트 되길 원하는 애니메이션 */
+
+	/* requestAnimationFrame 콜백함수가 다시 requestAnimationFrame 호출해야 합니다. */
+	window.requestAnimationFrame(callback);
+}
+
+// 등록
+window.requestAnimationFrame(callback);
+
+// 해제
+window.cancelAnimationFrame(callback);
+```
+
+### requestAnimationFrame 특징
+
+- 최신 브라우저에서는 해당 탭이 백그라운드로 넘어갔을 때는 동작하지 않도록합니다. (성능최적화)
+- 1초에 60번 동작이 최대입니다. (그 이상은 인간이 느끼지 못합니다. 그래서 최대한의 부드러움과 최대한의 성능을 이끌어낼 수 있습니다.)
+- 다수의 애니메이션에도 각각 타이머 값을 생성 및 참조하지 않고 내부의 동일한 타이머 참조합니다.
+
+
+
+
+### 참고
+
+- [window.requestAnimationFrame() | MDN](https://developer.mozilla.org/ko/docs/Web/API/Window/requestAnimationFrame)

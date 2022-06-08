@@ -22,6 +22,7 @@
 - [x] 이벤트 전파를 막을 수 있는 방법 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
 - [x] 이벤트 delegation에 대해 말해주세요 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
 - [x] 자바스크립트가 멀티 스레드 형식으로 동작하게 하는 것?([JavaScript](./JavaScript/README.md/#-자바스크립트가-멀티-스레드-형식으로-동작하게-하는-것))
+- [x] requestAnimationFrame에 대해서 말해주세요 ([JavaScript](./JavaScript/README.md/#-requestAnimationFrame에-대해서-말해주세요))
 
 ## React
 
@@ -52,7 +53,6 @@
 - [ ] Debounce 함수 구현해보기
 - [ ] Throttle 함수 구현해보기
 - [ ] (마이크로, 렌더링, 태스크큐)의 역할과 우선순위에 대해
-- [ ] requestanimationframe에 대해서
 - [ ] 자바스크립트가 프로토타입을 선택한 이유
 - [ ] z-index의 원리와 언제 형성되는지?
 - [ ] arraylist vs linkedlist
