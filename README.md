@@ -28,6 +28,7 @@
 
 - [x] 리액트에서 사용하는 JSX 문법은 순수 자바스크립트가 아닌데 브라우저에서 어떻게 동작할 수 있는 걸까요? ([React](./React/README.md/#-리액트에서-사용하는-jsx-문법은-순수-자바스크립트가-아닌데-브라우저에서-어떻게-동작할-수-있는-걸까요))
 - [x] 리액트에서 배열에 `key` 속성은 왜 필요할까요? ([React](./React/README.md/#-리액트에서-배열에-key-속성은-왜-필요할까요))
+- [x] HOC(Higher Order Component)가 무엇일까요? ([React](./React/README.md/#-hoc-higher-order-component가-무엇일까요))
 
 ## 해결되지 않은 것들
 

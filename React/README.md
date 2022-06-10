@@ -61,8 +61,100 @@ array.map(item => <Item key={item.key} />);
 
 이런 경우가 아니라면 [nanoid](https://github.com/ai/nanoid/) 라이브러리를 통해서 리스트 아이템의 고유한 아이디를 만들어 `key` 값으로 부여하길 권장하고 있습니다.
 
-> 참고
+### 참고
 
 - [React keys](https://ko.reactjs.org/docs/reconciliation.html#keys)
 - [React list key](https://ko.reactjs.org/docs/lists-and-keys.html#keys)
 - [Index as a key is an anti-pattern](https://robinpokorny.medium.com/index-as-a-key-is-an-anti-pattern-e0349aece318)
+
+## 🤔 HOC, Higher Order Component가 무엇일까요?
+
+> 고차 컴포넌트는 컴포넌트의 로직을 재사용하기 위한 React의 고급 기술입니다.
+> 쉽게 말해 고차 컴포넌트는 컴포넌트를 가져와서 새 컴포넌트를 반환하는 함수입니다.
+
+기본적으로 함수 컴포넌트를 사용하면
+
+```js
+const Component = (props) => {
+  /*
+  * 컴포넌트 로직
+  * ...
+  */
+  return (
+    /*
+    * 컴포넌트 뷰
+    * ...
+    */
+  )
+};
+```
+
+위와 같이 `props`를 받아서 뷰를 반환하는 것이 일반적인 컴포넌트입니다.
+
+그에 반해 고차 컴포넌트는 컴포넌트를 반환합니다.
+
+```js
+// 고차 컴포넌트는 컴포넌트를 반환합니다.
+const EnhancedComponent = higherOrderComponent(WrappedComponent);
+```
+
+고차 컴포넌트를 사용하는 예시는 보여주는 뷰는 비슷한데 사용하는 데이터가 다를 때 사용할 수 있습니다.
+
+```js
+// 이 함수는 컴포넌트를 매개변수로 받고..
+function withSubscription(WrappedComponent, selectData) {
+  // ...다른 컴포넌트를 반환하는데...
+  return class extends React.Component {
+    constructor(props) {
+      super(props);
+      this.handleChange = this.handleChange.bind(this);
+      this.state = {
+        data: selectData(DataSource, props)
+      };
+    }
+
+    componentDidMount() {
+      // ... 구독을 담당하고...
+      DataSource.addChangeListener(this.handleChange);
+    }
+
+    componentWillUnmount() {
+      DataSource.removeChangeListener(this.handleChange);
+    }
+
+    handleChange() {
+      this.setState({
+        data: selectData(DataSource, this.props)
+      });
+    }
+
+    render() {
+      // ... 래핑된 컴포넌트를 새로운 데이터로 랜더링 합니다!
+      // 컴포넌트에 추가로 props를 내려주는 것에 주목하세요.
+      return <WrappedComponent data={this.state.data} {...this.props} />;
+    }
+  };
+}
+
+/* 사용하는 법 */
+const CommentListWithSubscription = withSubscription(
+  CommentList,
+  (DataSource) => DataSource.getComments()
+);
+
+const BlogPostWithSubscription = withSubscription(
+  BlogPost,
+  (DataSource, props) => DataSource.getBlogPost(props.id)
+);
+```
+
+### 주의 사항
+
+- 고차 컴포넌트 내부에서 인자로 받아온 컴포넌트의 프로토타입을 변경하지 않도록 합니다.
+- `render` 함수 안에서 고차 컴포넌트를 사용하지 않도록 합니다. (성능 문제 = 한번 리렌더링 일어날 때 마다 새로운 고차 컴포넌트를 생성함)
+- 정적 메서드는 따로 복사해야한다.
+- `ref`는 전달되지 않는다. (`React.forwardRef`를 통해서 해결가능)
+
+### 참고
+
+- [higher order components | React](https://ko.reactjs.org/docs/higher-order-components.html)
