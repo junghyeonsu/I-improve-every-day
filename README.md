@@ -23,6 +23,8 @@
 - [x] 이벤트 delegation에 대해 말해주세요 ([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-등록-전달-방식-이벤프-전파를-멈추는-법))
 - [x] 자바스크립트가 멀티 스레드 형식으로 동작하게 하는 것?([JavaScript](./JavaScript/README.md/#-자바스크립트가-멀티-스레드-형식으로-동작하게-하는-것))
 - [x] requestAnimationFrame에 대해서 말해주세요 ([JavaScript](./JavaScript/README.md/#-requestAnimationFrame에-대해서-말해주세요))
+- [x] 이벤트 루프, 콜백 큐에 대해서([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-루프와-콜백-큐에-대해서))
+- [x] 테스크 큐, 마이크로 태스크 큐, 애니메이션 프레임의 우선 순위와 각각의 역할에 대해서([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-루프와-콜백-큐에-대해서))
 
 ## React
 
@@ -34,7 +36,6 @@
 
 - [ ] flux 아키텍처에 대해서
 - [ ] typescript duck typing
-- [ ] 이벤트 루프, 테스크 큐
 - [ ] immer 불변성 관리, 고차함수? | (순수함수, 불변성 얘기) 왜 순수 함수로 작성해야 하나 | 고차 함수 개념에 대해서 | 만약 그럼 불변성을 깨뜨리게 되면 어떻게 되나?
 - [ ] 나만의 아키텍처를 설계하는 방식이 있나?
 - [ ] 웹 페이지가 느리다는 피드백을 받는 경우 어떤 최적화를 적용할 수 있을까요?
@@ -53,7 +54,6 @@
 - [ ] DeepCopy 함수 구현해보기
 - [ ] Debounce 함수 구현해보기
 - [ ] Throttle 함수 구현해보기
-- [ ] (마이크로, 렌더링, 태스크큐)의 역할과 우선순위에 대해
 - [ ] 자바스크립트가 프로토타입을 선택한 이유
 - [ ] z-index의 원리와 언제 형성되는지?
 - [ ] arraylist vs linkedlist
