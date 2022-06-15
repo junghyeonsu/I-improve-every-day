@@ -25,6 +25,7 @@
 - [x] requestAnimationFrame에 대해서 말해주세요 ([JavaScript](./JavaScript/README.md/#-requestAnimationFrame에-대해서-말해주세요))
 - [x] 이벤트 루프, 콜백 큐에 대해서([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-루프와-콜백-큐에-대해서))
 - [x] 테스크 큐, 마이크로 태스크 큐, 애니메이션 프레임의 우선 순위와 각각의 역할에 대해서([JavaScript](./JavaScript/README.md/#-자바스크립트-이벤트-루프와-콜백-큐에-대해서))
+- [x] preventDefault와 stopPropogation에 대한 차이점과 설명을 해주세요.([JavaScript](./JavaScript/README.md/#추가-preventdefault와의-차이점))
 
 ## React
 
@@ -45,7 +46,6 @@
 - [ ] 페이지 로딩 속도를 줄이기 위해서는 어떤 점검을 해야 할까요?
 - [ ] 리플로우와 리페인트에 대한 차이를 설명해주세요.
 - [ ] HTML에 대한 구조가 변경되면 리플로우가 일어나는데 CSS에 의해 리플로우가 일어난다면 어떤 속성 때문 일까요?
-- [ ] preventDefault와 stopPropogation에 대한 차이점과 설명을 해주세요.
 - [ ] 기기가 가지는 물리적 해상도와 개발에 물리적 해상도 차이를 알고 계신가요?
 - [ ] 이미지 확장자 .svg, .png, .jpeg, .gif에 대한 차이를 설명해주세요.
 - [ ] 타입스크립트 제네릭에 대해서 조금 더 상세하게 써볼 기회가 있을까?
